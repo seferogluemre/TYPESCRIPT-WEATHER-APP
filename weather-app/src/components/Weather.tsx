@@ -82,7 +82,7 @@ function Weatherdata() {
     <div
       className="pt-5 weather-app"
       style={{
-        backgroundImage: `url(../assets/${getBackgroundImage()})`,
+        backgroundImage: `url(../src/assets/${getBackgroundImage()})`,
       }}
     >
       <Container>
