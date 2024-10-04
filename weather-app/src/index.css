@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+}
+.weather-app {
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Tam ekran */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Dikey ortalama */
+  align-items: center; /* Yatay ortalama */
+  color: white; /* Yazı rengi */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Yazı gölgesi */
+}
+Form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.form-control {
+  max-width: 500px; /* Genişliği sınırlama */
+}
+
+.btn {
+  transition: background-color 0.3s ease-in-out; /* Buton hover efekti */
+}
+
+.btn:hover {
+  background-color: rgba(255, 165, 0, 0.8); /* Hover rengi */
+}
+.card {
+  width: 250px;
+  text-align: center;
+  opacity: 0; /* Başlangıçta görünmez */
+  transform: translateY(220px); /* Başlangıçta biraz daha aşağıda */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Daha uzun geçiş süresi */
+  padding: 20px;
+  background-color: transparent;
+  box-shadow: 2px 8px 9px rgb(50, 52, 65);
+  color: rgb(255, 214, 161);
+  font-size: 25px;
+}
+
+.card.show {
+  opacity: 1; /* Görünür hale gelir */
+  transform: translateY(0); /* İlk konumuna döner */
+}
